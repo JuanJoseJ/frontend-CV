@@ -7,9 +7,9 @@ const apiURL = "http://localhost:8001";
 export default function profile({ profile }) {
   const imageURL = `${apiURL + profile.foto_perfil.url}`;
   return (
-    <div className="sm:w-1/3 min-h-screen w-full pt-3 p-2 sm:pt-8">
-      <div className="grid grid-cols-1 justify-items-center content-center">
-        <div className="h-48 w-full relative max-w-xs">
+    <div className="sm:w-1/3 min-h-screen w-full p-2 pt-8 shadow-lg lg:flex flex-col flex-wrap justify-center">
+      <div className="grid grid-cols-1 justify-items-center ">
+        <div className="h-48 lg:h-52 w-full relative z-0">
           <Image
             src={imageURL}
             layout="fill"
@@ -25,21 +25,33 @@ export default function profile({ profile }) {
           </p>
         </div>
         <div className="w-4/5 mt-1">
-          <p className="font-bold text-yellow-700 lg:text-lg">E-Mail</p>
+          <p className="font-bold text-blue-500 lg:text-lg">Currently in</p>
+        </div>
+        <div className="w-4/5 mt-1">
+          <p className="lg:text-lg">{profile.ubicacion}</p>
+        </div>
+        <div className="w-4/5 mt-1">
+          <p className="font-bold text-blue-500 lg:text-lg">E-Mail</p>
         </div>
         <div className="w-4/5 mt-1">
           <p className="lg:text-lg">{profile.correo}</p>
         </div>
         <div className="w-4/5 mt-1">
-          <p className="font-bold text-yellow-700 lg:text-lg">GitHub</p>
+          <p className="font-bold text-blue-500 lg:text-lg">GitHub</p>
         </div>
         <div className="w-4/5 mt-1">
           <p className="">
-            <Link
-              href={"http://" + profile.github_link}
-            >
-              <a className='lg:text-lg'>{profile.github_link}</a>
+            <Link href={"http://" + profile.github_link}>
+              <a className="lg:text-lg">{profile.github_link}</a>
             </Link>
+          </p>
+        </div>
+        <div className="w-4/5 mt-1">
+          <p className="font-bold text-blue-500 lg:text-lg">About me</p>
+        </div>
+        <div className="w-4/5">
+          <p className="lg:text-lg text-justify overflow-ellipsis">
+            {profile.perfil}
           </p>
         </div>
       </div>

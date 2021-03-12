@@ -1,36 +1,22 @@
+import Link from "next/link";
+
 export default function nav() {
   return (
     <>
-        <nav className="flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 bg-white shadow sm:items-baseline w-full h-full">
-          <div class="mb-2 sm:mb-0">
-            <a
-              href=""
-              class="text-2xl no-underline text-grey-darkest hover:text-blue-dark"
-            >
-              Home
+      <nav className="flex flex-row flex-wrap content-center text-left justify-between py-4 px-6 bg-white shadow items-baseline w-full h-full">
+        <div className="mb-2 sm:mb-0">
+          <Link href="/">
+            <a className="text-2xl no-underline text-grey-darkest">
+              Curriculum-Vitae
             </a>
-          </div>
-          <div>
-            <a
-              href=""
-              class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2"
-            >
-              One
-            </a>
-            <a
-              href=""
-              class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2"
-            >
-              Two
-            </a>
-            <a
-              href=""
-              class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2"
-            >
-              Three
-            </a>
-          </div>
-        </nav>
+          </Link>
+        </div>
+        <div>
+          <Link href="/">
+            <a className="text-lg no-underline text-grey-darkest ml-2"></a>
+          </Link>
+        </div>
+      </nav>
     </>
   );
 }
