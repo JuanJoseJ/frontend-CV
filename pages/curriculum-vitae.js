@@ -32,7 +32,7 @@ export default function CurriculumVitae({ profileData, resumeData }) {
             <Nav></Nav>
           </div>
           <div className="w-full h-10"></div>
-          <div className="w-full sm:flex min-h-screen">
+          <div className="w-full sm:flex">
             <Profile profile={profileData}></Profile>
             <Resume resume={resumeData}></Resume>
           </div>
