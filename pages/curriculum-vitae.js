@@ -3,20 +3,23 @@ import Resume from "../components/curriculum/resume";
 import Nav from "../components/imports/navbar";
 import Head from "next/head";
 import { getProfileData } from "../lib/profile-api";
-import { getResumeData } from "../lib/resume-api";
+import { getStudiesData } from "../lib/studies-api";
+import { getWorkData } from "../lib/work-api";
 
 export async function getStaticProps() {
   const profileData = await getProfileData();
-  const resumeData = await getResumeData();
+  const studeisData = await getStudiesData();
+  const workData = await getWorkData();
   return {
     props: {
       profileData,
-      resumeData,
+      studeisData,
+      workData,
     },
   };
 }
 
-export default function CurriculumVitae({ profileData, resumeData }) {
+export default function CurriculumVitae({ profileData, studeisData, workData }) {
   return (
     <>
       <Head>
@@ -34,7 +37,10 @@ export default function CurriculumVitae({ profileData, resumeData }) {
           <div className="w-full h-10"></div>
           <div className="w-full sm:flex">
             <Profile profile={profileData}></Profile>
-            <Resume resume={resumeData}></Resume>
+            <Resume 
+              studies={studeisData}
+              works={workData}
+            ></Resume>
           </div>
         </div>
     </>
