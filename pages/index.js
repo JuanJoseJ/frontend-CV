@@ -1,44 +1,52 @@
+import Profile from "../components/curriculum/profile";
+import Resume from "../components/curriculum/resume";
+import Nav from "../components/imports/navbar";
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-import { getSortedPostsData } from "../lib/posts";
+import { getProfileData } from "../lib/profile-api";
+import { getStudiesData } from "../lib/studies-api";
+import { getWorkData } from "../lib/work-api";
+import { getProjectsData } from "../lib/projects-api";
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const profileData = await getProfileData();
+  const studeisData = await getStudiesData();
+  const workData = await getWorkData();
+  const projectsData = await getProjectsData();
   return {
     props: {
-      allPostsData,
+      profileData,
+      studeisData,
+      workData,
+      projectsData,
     },
   };
 }
 
-export default function Home({ allPostsData }) {
+export default function CurriculumVitae({ profileData, studeisData, workData, projectsData }) {
   return (
-    <Layout home>
+    <>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Curriculum Vitae</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
-            </li>
-          ))}
-        </ul>
-      </section>
-    </Layout>
+        <div className="root h-screen">
+          <div className="w-full h-10 fixed z-10">
+            <Nav></Nav>
+          </div>
+          <div className="w-full h-10"></div>
+          <div className="w-full sm:flex">
+            <Profile profile={profileData}></Profile>
+            <Resume 
+              studies={studeisData}
+              works={workData}
+              projects={projectsData}
+            ></Resume>
+          </div>
+        </div>
+    </>
   );
 }

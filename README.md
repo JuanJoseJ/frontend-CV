@@ -1,24 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h3 align="center">Prrsonal CV, FrontEnd</h3>
 
-## Getting Started
+---
 
-First, run the development server:
+<p align="center"> This is the front side of my personal curriculum vitae, you can see my contacts, profile, work experience, projects and studies.
+    <br> 
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
+## 📝 Table of Contents
+
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [Learn More](#Learn_More)
+- [Deploy](#Deploy)
+- [Built Using](#built_using)
+- [Authors](#authors)
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+Clone this repository: 
+
+Run the development server:
+
+```
+git clone https://github.com/JuanJoseJ/frontend-CV.git
+```
+
+Once downloaded, open the terminal in the project directory, and install dependencies with:
+
+```
+yarn install
+```
+
+You must also download the back-end project in another directory for this project:
+
+```
+git clone https://github.com/JuanJoseJ/backend-CV.git
+```
+
+Finally, run the development server, both for the front and backend:
+
+```
+yarn develop
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
+## Learn More <a name = "Learn_More"></a>
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -27,8 +55,18 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on Vercel <a name = "Deploy"></a>
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [MongoDB](https://www.mongodb.com/) - Database
+- [Next.js](https://nextjs.org/) - Server Framework
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@JuanJoseJ](https://github.com/JuanJoseJ) - Developer
+

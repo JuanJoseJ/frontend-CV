@@ -8,7 +8,7 @@ export default function card({ data }) {
                 <div className='h-7 pl-1 bg-white rounded-t border-b'>
                     <p className='text-lg font-semibold'>
                         <Link href={""+data.url}>
-                            <a className='cursor-pointer' >{data.nombre}</a>
+                            <a className='cursor-pointer' target='_blank'>{data.nombre}</a>
                         </Link>
                     </p>
                 </div>
