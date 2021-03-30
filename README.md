@@ -9,8 +9,6 @@
 ## 📝 Table of Contents
 
 - [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Built Using](#built_using)
 - [Learn More](#Learn_More)
 - [Deploy](#Deploy)
 - [Built Using](#built_using)
@@ -19,8 +17,6 @@
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 Clone this repository: 
-
-Run the development server:
 
 ```
 git clone https://github.com/JuanJoseJ/frontend-CV.git
