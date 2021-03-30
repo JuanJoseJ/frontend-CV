@@ -1,68 +1,48 @@
-<h3 align="center">Prrsonal CV, FrontEnd</h3>
+# Project Title
 
----
 
-<p align="center"> This is the front side of my personal curriculum vitae, you can see my contacts, profile, work experience, projects and studies.
-    <br> 
-</p>
 
-## 📝 Table of Contents
+## Table of Contents
 
+- [About](#about)
 - [Getting Started](#getting_started)
-- [Learn More](#Learn_More)
-- [Deploy](#Deploy)
-- [Built Using](#built_using)
-- [Authors](#authors)
+- [Usage](#usage)
+- [Contributing](../CONTRIBUTING.md)
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+## About <a name = "about"></a>
 
-Clone this repository: 
+Write about 1-2 paragraphs describing the purpose of your project.
 
-```
-git clone https://github.com/JuanJoseJ/frontend-CV.git
-```
+## Getting Started <a name = "getting_started"></a>
 
-Once downloaded, open the terminal in the project directory, and install dependencies with:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-```
-yarn install
-```
+### Prerequisites
 
-You must also download the back-end project in another directory for this project:
+What things you need to install the software and how to install them.
 
 ```
-git clone https://github.com/JuanJoseJ/backend-CV.git
+Give examples
 ```
 
-Finally, run the development server, both for the front and backend:
+### Installing
+
+A step by step series of examples that tell you how to get a development env running.
+
+Say what the step will be
 
 ```
-yarn develop
+Give the example
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+And repeat
 
-## Learn More <a name = "Learn_More"></a>
+```
+until finished
+```
 
-To learn more about Next.js, take a look at the following resources:
+End with an example of getting some data out of the system or using it for a little demo.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage <a name = "usage"></a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel <a name = "Deploy"></a>
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Next.js](https://nextjs.org/) - Server Framework
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@JuanJoseJ](https://github.com/JuanJoseJ) - Developer
-
+Add notes about how to use the system.
